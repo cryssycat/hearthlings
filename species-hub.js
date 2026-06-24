@@ -159,8 +159,8 @@ mutations: {
         "Dream Mist",
         "Blooming Flowers"
     ]
-
-];
+  }
+};
 
 function titleCase(text) {
   return text
