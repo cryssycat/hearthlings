@@ -1,4 +1,46 @@
 const SPECIES_TRAITS = {
+  bodyType: {
+    common: ["Round", "Fluffy", "Soft-Bodied", "Small", "Plush-Like", "Chubby", "Pear-Shaped", "Compact", "Bean-Shaped", "Gentle Build"],
+    uncommon: ["Long-Bodied", "Extra Fluffy", "Tiny", "Cloudy Body", "Curled Posture", "Pillow-Bodied", "Squishy Build", "Tall and Soft", "Teardrop Shape", "Marshmallow Build"],
+    rare: ["Floating Body", "Crystal Body", "Starry Body", "Patchwork Body", "Glowing Core Body", "Transparent Belly", "Charm-Filled Body", "Frosted Body", "Petal Body", "Lantern-Bellied"],
+    legendary: ["Celestial Body", "Living Plush Body", "Dream-Made Body", "Constellation Body", "Aurora Body", "Wish-Born Body", "Memory-Keeper Body", "Tiny Galaxy Body", "Sacred Hearth Body", "Eclipse Body"]
+  },
+
+  ears: {
+    common: ["Round Ears", "Short Ears", "Fluffy Ears", "Button Ears", "Tiny Ears", "Soft Folded Ears", "Bear Ears", "Catlike Ears", "Puppy Ears", "Simple Lop Ears"],
+    uncommon: ["Long Ears", "Droopy Ears", "Ribbon-Tied Ears", "Cloud-Tipped Ears", "Heart-Tipped Ears", "Leafy Ears", "Bell Ears", "Mismatched Ears", "Flower Ears", "Star-Tipped Ears"],
+    rare: ["Wing Ears", "Crystal Ears", "Lantern Ears", "Moon Ears", "Glowing Inner Ears", "Floating Ear Charms", "Patchwork Ears", "Candleflame Ears", "Snowdrop Ears", "Halo-Framed Ears"],
+    legendary: ["Moon-Phase Ears", "Halo Ears", "Constellation Ears", "Wish Ears", "Aurora Ears", "Spirit-Flame Ears", "Rainbow Glass Ears", "Ancient Bell Ears", "Celestial Velvet Ears", "Eclipse-Tipped Ears"]
+  },
+
+  eyes: {
+    common: ["Round Eyes", "Sleepy Eyes", "Soft Eyes", "Button Eyes", "Dot Eyes", "Shy Eyes", "Wide Eyes", "Gentle Eyes", "Glossy Eyes", "Tiny Sparkle Eyes"],
+    uncommon: ["Heart Pupils", "Star Pupils", "Flower Pupils", "Moon Pupils", "Two-Tone Eyes", "Soft Glow Eyes", "Tear-Drop Pupils", "Diamond Pupils", "Swirl Pupils", "Candy Shine Eyes"],
+    rare: ["Glowing Eyes", "Galaxy Eyes", "Crystal Eyes", "Lantern Eyes", "Mismatched Magic Eyes", "Aurora Eyes", "Closed Smiling Eyes", "Floating Pupil Eyes", "Starfield Sclera", "Candlelit Eyes"],
+    legendary: ["Living Constellation Eyes", "Wishkeeper Eyes", "Eclipse Eyes", "Rainbow Halo Eyes", "Ancient Spirit Eyes", "Dreamweaver Eyes", "Celestial Mirror Eyes", "Timeglass Eyes", "Soulglow Eyes", "Miracle Eyes"]
+  },
+
+  tail: {
+    common: ["Tiny Tail", "Fluffy Tail", "Round Tail", "Pom Tail", "Short Tail", "Curled Tail", "Soft Stub Tail", "Puffy Tail", "Simple Long Tail", "Heart Puff Tail"],
+    uncommon: ["Ribbon Tail", "Cloud Tail", "Bell Tail", "Flower Tail", "Tea Steam Tail", "Candy Tail", "Blanket Tail", "Star-Tipped Tail", "Moon-Tipped Tail", "Patchwork Tail"],
+    rare: ["Lantern Tail", "Star Tail", "Crystal Tail", "Floating Charm Tail", "Candle Tail", "Snowglobe Tail", "Wisp Tail", "Rose Vine Tail", "Galaxy Tail", "Aurora Tail"],
+    legendary: ["Living Constellation Tail", "Wish Tail", "Eclipse Tail", "Rainbow Trail Tail", "Ancient Lantern Tail", "Dream Mist Tail", "Celestial Ribbon Tail", "Spirit Flame Tail", "Orbiting Moon Tail", "Miracle Bloom Tail"]
+  },
+
+  markings: {
+    common: ["Cheek Dots", "Soft Blush", "Paw Spots", "Belly Patch", "Freckles", "Forehead Spot", "Ear Tips", "Tail Tip", "Simple Stripes", "Tiny Hearts"],
+    uncommon: ["Star Freckles", "Moon Mark", "Flower Spots", "Ribbon Markings", "Cloud Patches", "Candy Swirls", "Tea Steam Swirls", "Snowflake Marks", "Book Page Mark", "Bell Mark"],
+    rare: ["Glowing Markings", "Crystal Spots", "Galaxy Speckles", "Lantern Glow Patches", "Rose Vine Markings", "Aurora Streaks", "Candle Wax Marks", "Floating Rune Marks", "Dream Dust Spots", "Halo Mark"],
+    legendary: ["Living Constellation Marks", "Eclipse Markings", "Wish Runes", "Rainbow Sigils", "Ancient Hearth Marks", "Celestial Birthmark", "Spirit Flame Markings", "Miracle Bloom Marks", "Time Rune Markings", "Sacred Guardian Seal"]
+  },
+
+  accessories: {
+    common: ["Tiny Bow", "Warm Scarf", "Bell Collar", "Flower Pin", "Tea Cup Charm", "Soft Blanket", "Star Clip", "Moon Clip", "Cookie Pouch", "Little Satchel"],
+    uncommon: ["Ribbon Wand", "Lantern Charm", "Memory Locket", "Plush Backpack", "Garden Apron", "Spellbook Bag", "Moonflower Crown", "Crystal Bracelet", "Tiny Cape", "Cozy Bonnet"],
+    rare: ["Floating Halo", "Crystal Crown", "Star Lantern", "Wish Locket", "Guardian Bell", "Aurora Shawl", "Spirit Veil", "Rose Quartz Collar", "Dreamkeeper Key", "Magic Tea Kettle"],
+    legendary: ["Ancient Hearth Crown", "Celestial Halo", "Eclipse Pendant", "Constellation Cape", "Wishkeeper Relic", "Miracle Bell", "Rainbow Guardian Charm", "Living Storybook", "Sacred Moon Crown", "Timeworn Star Key"]
+  },
+
   wisps: {
     common: [
       "Cloud Wisp",
