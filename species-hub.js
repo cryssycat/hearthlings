@@ -1,67 +1,165 @@
 const SPECIES_TRAITS = {
-  bodyType: {
-    common: ["Small rounded body", "Soft chubby body", "Bean-shaped body", "Tiny plush body"],
-    uncommon: ["Long noodle body", "Extra fluffy body", "Teardrop body", "Pillow-shaped body"],
-    rare: ["Floating body", "Crystal-lined body", "Patchwork plush body", "Semi-transparent body"],
-    legendary: ["Living constellation body", "Dream-cloud body", "Celestial glass body", "Moonlit spirit body"]
-  },
-  ears: {
-    common: ["Round ears", "Short folded ears", "Tiny button ears", "Soft bear ears"],
-    uncommon: ["Long droopy ears", "Ribbon-tipped ears", "Fluffy lop ears", "Mismatched ears"],
-    rare: ["Wing ears", "Crystal ears", "Lantern ears", "Flower-petal ears"],
-    legendary: ["Moon-phase ears", "Halo ears", "Star-map ears", "Glowing aurora ears"]
-  },
-  eyes: {
-    common: ["Round eyes", "Sleepy eyes", "Shiny bead eyes", "Soft oval eyes"],
-    uncommon: ["Heart pupils", "Star pupils", "Diamond pupils", "Button eyes"],
-    rare: ["Glowing eyes", "Split-color eyes", "Constellation pupils", "Tear-drop pupils"],
-    legendary: ["Galaxy eyes", "Moon eclipse eyes", "Living starlight eyes", "Oracle eyes"]
-  },
-  tail: {
-    common: ["Tiny nub tail", "Fluffy round tail", "Short curled tail", "Pom-pom tail"],
-    uncommon: ["Ribbon tail", "Long curled tail", "Bell tail", "Braided tail"],
-    rare: ["Lantern tail", "Star tail", "Crystal charm tail", "Cloud puff tail"],
-    legendary: ["Living constellation tail", "Moon lantern tail", "Wish-granting tail", "Aurora veil tail"]
-  },
-  markings: {
-    common: ["Cheek blush", "Paw spots", "Soft belly patch", "Freckle dots"],
-    uncommon: ["Heart markings", "Star freckles", "Ribbon stripes", "Moon cheek marks"],
-    rare: ["Glowing markings", "Moving cloud marks", "Crystal flecks", "Flower constellations"],
-    legendary: ["Living star map", "Prophecy markings", "Aurora shimmer marks", "Dream script markings"]
-  },
-  magic: {
-    common: ["Warmth charm", "Sleepy comfort aura", "Tiny sparkle trail", "Gentle luck charm"],
-    uncommon: ["Tea steam magic", "Memory glow", "Protective cuddle ward", "Mood-sensing shimmer"],
-    rare: ["Nightmare shield", "Fallen star collecting", "Lantern healing", "Dream doorway magic"],
-    legendary: ["Wish shelter magic", "Moon blessing", "Time-softening lullaby", "Constellation guardian form"]
-  },
-  companion: {
-    common: ["Tiny wisp", "Plush mouse", "Teacup sprite", "Button beetle charm"],
-    uncommon: ["Ribbon moth", "Moon bunny plush", "Mini lantern fox", "Sugar cloud sprite"],
-    rare: ["Crystal mouse", "Dream ferret", "Starling wisp", "Flower dragonlet"],
-    legendary: ["Ancient comfort spirit", "Tiny moon guardian", "Living plush familiar", "Celestial hearth flame"]
-  }
-};
+ wisps: {
+    common: [
+        "Cloud Wisp",
+        "Heart Wisp",
+        "Dream Wisp",
+        "Flower Wisp",
+        "Tea Wisp",
+        "Memory Wisp",
+        "Snow Wisp",
+        "Bubble Wisp",
+        "Berry Wisp",
+        "Candle Wisp"
+    ],
 
-const EXAMPLE_GALLERY = [
-  {
-    name: "Mochi Moonbell",
-    icon: "☾",
-    notes: "A sleepy comfort guardian who protects bedrooms from nightmares.",
-    tags: ["Rare Tail", "Uncommon Eyes", "Cozy Magic"]
-  },
-  {
-    name: "Sugar Hearthglow",
-    icon: "✦",
-    notes: "A cafe-dwelling Hearthling who warms mugs and pastry boxes.",
-    tags: ["Common Body", "Rare Magic", "Cafe Theme"]
-  },
-  {
-    name: "Luma Softwish",
-    icon: "♡",
-    notes: "A tiny guardian born from a wish tucked under a pillow.",
-    tags: ["Legendary Eyes", "Dream Theme", "Plush Body"]
-  }
+    uncommon: [
+        "Butterfly Wisp",
+        "Book Wisp",
+        "Rain Wisp",
+        "Cookie Wisp",
+        "Ribbon Wisp",
+        "Bell Wisp",
+        "Moon Wisp",
+        "Star Dust Wisp",
+        "Moss Wisp",
+        "Lanternfly Wisp"
+    ],
+
+    rare: [
+        "Lantern Wisp",
+        "Star Wisp",
+        "Shrine Wisp",
+        "Galaxy Wisp",
+        "Aurora Wisp",
+        "Foxfire Wisp",
+        "Rose Wisp",
+        "Crystal Wisp",
+        "Pastry Wisp",
+        "Spirit Wisp"
+    ],
+
+    legendary: [
+        "Comet Wisp",
+        "Phoenix Wisp",
+        "Dreamkeeper Wisp",
+        "Constellation Wisp",
+        "Wish Wisp",
+        "Rainbow Wisp",
+        "Eclipse Wisp",
+        "Guardian Wisp",
+        "Ancient Wisp",
+        "Celestial Wisp"
+    ]
+},
+
+magic: {
+    common: [
+        "Comfort Magic",
+        "Dream Magic",
+        "Warmth Magic",
+        "Protection Magic",
+        "Memory Magic",
+        "Flower Magic",
+        "Tea Magic",
+        "Bakery Magic",
+        "Moon Magic",
+        "Snow Magic"
+    ],
+
+    uncommon: [
+        "Music Magic",
+        "Painting Magic",
+        "Garden Magic",
+        "Rain Magic",
+        "Harvest Magic",
+        "Cookie Magic",
+        "Bubble Magic",
+        "Friendship Magic",
+        "Storybook Magic",
+        "Healing Magic"
+    ],
+
+    rare: [
+        "Starlight Magic",
+        "Foxfire Magic",
+        "Frost Magic",
+        "Wish Magic",
+        "Aurora Magic",
+        "Shadow Magic",
+        "Love Magic",
+        "Candle Magic",
+        "Crystal Magic",
+        "Lantern Magic"
+    ],
+
+    legendary: [
+        "Time Magic",
+        "Constellation Magic",
+        "Rainbow Magic",
+        "Dreamweaving Magic",
+        "Soul Magic",
+        "Creation Magic",
+        "Miracle Magic",
+        "Eclipse Magic",
+        "Celestial Magic",
+        "Ancient Hearth Magic"
+    ]
+},
+
+mutations: {
+    common: [
+        "None",
+        "Glowing Paw Pads",
+        "Sparkling Fur",
+        "Floating Charms",
+        "Ribbon Trails",
+        "Heart Aura",
+        "Flower Scent",
+        "Glowing Ears",
+        "Soft Glow",
+        "Warm Fur"
+    ],
+
+    uncommon: [
+        "Floating Ribbons",
+        "Glowing Freckles",
+        "Petal Trails",
+        "Moonlit Fur",
+        "Candy Scent",
+        "Snowflake Breath",
+        "Starry Blush",
+        "Cloudy Footprints",
+        "Shimmering Tail",
+        "Tiny Bells"
+    ],
+
+    rare: [
+        "Floating Accessories",
+        "Orbiting Stars",
+        "Living Halo",
+        "Snowfall Aura",
+        "Petal Shower",
+        "Steam Aura",
+        "Moonlight Trail",
+        "Sparkle Trail",
+        "Tiny Floating Hearts",
+        "Crystal Tears"
+    ],
+
+    legendary: [
+        "Living Constellations",
+        "Floating Mini Moons",
+        "Permanent Aurora Aura",
+        "Rainbow Trails",
+        "Glowing Antlers",
+        "Halo of Stars",
+        "Spirit Flames",
+        "Orbiting Lanterns",
+        "Dream Mist",
+        "Blooming Flowers"
+    ]
+}
 ];
 
 function titleCase(text) {
