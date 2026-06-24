@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Original Species Hub</title>
+  <link rel="stylesheet" href="species-hub.css" />
+</head>
+<body>
+  <main class="species-page">
+    <section class="species-hero">
+      <div class="species-banner">
+        <div class="banner-sparkles">✦ ✧ ✦</div>
+        <h1>Hearthlings</h1>
+        <p>Small comfort guardians born from warmth, wishes, and cozy magic.</p>
+      </div>
+    </section>
+
+    <nav class="species-tabs" aria-label="Species hub tabs">
+      <button class="tab-button active" data-tab="intro">Intro</button>
+      <button class="tab-button" data-tab="traits">Traits</button>
+      <button class="tab-button" data-tab="generator">Generator</button>
+      <button class="tab-button" data-tab="gallery">Gallery</button>
+    </nav>
+
+    <section id="intro" class="tab-panel active">
+      <div class="content-card wide-card">
+        <h2>Species Overview</h2>
+        <p>
+          Hearthlings are tiny magical companions about the size of a house cat. They are drawn to people, homes,
+          and places that need comfort, protection, or a little extra warmth. Their appearances vary wildly depending
+          on the traits they are born with, from soft plush bodies to glowing lantern tails and starry eyes.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Size</h3>
+          <p>Small house-cat height</p>
+        </article>
+        <article class="info-card">
+          <h3>Role</h3>
+          <p>Comfort guardians and tiny magical companions</p>
+        </article>
+        <article class="info-card">
+          <h3>Magic</h3>
+          <p>Gentle protective magic, emotional warmth, and cozy charms</p>
+        </article>
+        <article class="info-card">
+          <h3>Setting</h3>
+          <p>Homes, cafes, gardens, libraries, festivals, and magical towns</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="traits" class="tab-panel">
+      <div class="content-card wide-card">
+        <h2>Traits</h2>
+        <p>Traits are separated by type. Each type contains rarity cards for easy browsing.</p>
+      </div>
+      <div id="traitsContainer" class="traits-container"></div>
+    </section>
+
+    <section id="generator" class="tab-panel">
+      <div class="content-card generator-card">
+        <h2>Random Trait Generator</h2>
+        <p>Roll one trait from each type, then copy the result for a design prompt or masterlist entry.</p>
+
+        <div class="generator-actions">
+          <button id="rollSpeciesButton" class="primary-button">Roll Traits</button>
+          <button id="copySpeciesButton" class="secondary-button">Copy Roll</button>
+        </div>
+
+        <pre id="speciesRollOutput" class="roll-output">Click “Roll Traits” to generate a list.</pre>
+        <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="gallery" class="tab-panel">
+      <div class="content-card wide-card">
+        <h2>Mini Gallery</h2>
+        <p>Example cards for finished species designs. Replace the placeholders with your own character images.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+  </main>
+
+  <script src="species-hub.js"></script>
+</body>
+</html>
